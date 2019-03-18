@@ -17,20 +17,21 @@ align-items: center;">
     </h2>
 </div>
 
-
+<!--Botones y título con flex-->
 <div style="max-width: 700px;
 margin: 0 auto;
 padding:50px;">
     <header>
-            <h2 style="text-align: center;
-            background:rgba(0,0,0,0.2);
-            padding:20px;
-            font-family: frutiger,verdana,sans-serif; 
-            font-size: 1.5vw; 
-            color: #ff0049;">Informes de ventas</h2>
+        <h2 style="text-align: center;
+        background:rgba(0,0,0,0.2);
+        padding:20px;
+        font-family: frutiger,verdana,sans-serif; 
+        font-size: 1.5vw; 
+        color: #ff0049;">Informes de ventas</h2>
     </header>
 <nav>
     <ul style="flex-wrap:wrap;
+    box-sizing: border-box;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -40,9 +41,11 @@ padding:50px;">
             <a href="#"
             style="color:white;
             font-weight: 100;
+            box-sizing: border-box;
             letter-spacing: 2px;
             text-decoration: none;
             background:rgba(0,0,0,0.2);
+            border: 2px solid rgba(0,0,0,0.21);
             padding:20px 0px;
             display: inline-block;
             width: 100%;
@@ -53,9 +56,11 @@ padding:50px;">
             <a href="#"
             style="color:white;
             font-weight: 100;
+            box-sizing: border-box;
             letter-spacing: 2px;
             text-decoration: none;
             background:rgba(0,0,0,0.2);
+            border: 2px solid rgba(0,0,0,0.21);
             padding:20px 0px;
             display: inline-block;
             width: 100%;
@@ -66,9 +71,11 @@ padding:50px;">
             <a href="#"
             style="color:white;
             font-weight: 100;
+            box-sizing: border-box;
             letter-spacing: 2px;
             text-decoration: none;
             background:rgba(0,0,0,0.2);
+            border: 2px solid rgba(0,0,0,0.21);
             padding:20px 0px;
             display: inline-block;
             width: 100%;
@@ -79,9 +86,11 @@ padding:50px;">
             <a href="#"
             style="color:white;
             font-weight: 100;
+            box-sizing: border-box;
             letter-spacing: 2px;
             text-decoration: none;
             background:rgba(0,0,0,0.2);
+            border: 2px solid rgba(0,0,0,0.21);
             padding:20px 0px;
             display: inline-block;
             width: 100%;
@@ -102,3 +111,260 @@ padding:50px;">
     </li>
     </ul>
 </nav>
+</div>
+
+<!--Botones y título con grid-->
+<div style="max-width: 700px;
+margin: 0 auto;
+padding:50px;">
+    <header>
+        <h2 style="text-align: center;
+        background:rgba(0,0,0,0.2);
+        padding:20px;
+        font-family: frutiger,verdana,sans-serif; 
+        color: #ff0049;">Informes de ventas</h2>
+    </header>
+<nav>
+    <ul style="
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    ">
+        <li
+        style=" 
+        box-sizing: border-box;
+        background:rgba(0,0,0,0.2);
+        border: 2px solid rgba(0,0,0,0.21);
+        ">
+            <a href="#"
+            style="color:white;
+            font-weight: 100;
+            letter-spacing: 2px;
+            text-decoration: none;
+            padding:20px;
+            width: 100%;
+            display: inline-block;
+            text-align: center;"
+            >Item 01</a>
+        </li>
+        <li
+        style=" 
+        box-sizing: border-box;
+        background:rgba(0,0,0,0.2);
+        border: 2px solid rgba(0,0,0,0.21);
+        ">
+            <a href="#"
+            style="color:white;
+            font-weight: 100;
+            letter-spacing: 2px;
+            text-decoration: none;
+            padding:20px;
+            width: 100%;
+            display: inline-block;
+            text-align: center;"
+            >Item 02</a>
+        </li>
+        <li
+        style=" 
+        box-sizing: border-box;
+        background:rgba(0,0,0,0.2);
+        border: 2px solid rgba(0,0,0,0.21);
+        ">
+            <a href="#"
+            style="color:white;
+            font-weight: 100;
+            letter-spacing: 2px;
+            text-decoration: none;
+            padding:20px;
+            width: 100%;
+            display: inline-block;
+            text-align: center;"
+            >Item 03</a>
+        </li>
+        <li
+        style=" 
+        box-sizing: border-box;
+        background:rgba(0,0,0,0.2);
+        border: 2px solid rgba(0,0,0,0.21);
+        ">
+            <a href="#"
+            style="color:white;
+            font-weight: 100;
+            letter-spacing: 2px;
+            text-decoration: none;
+            padding:20px;
+            width: 100%;
+            display: inline-block;
+            text-align: center;"
+            >Item 04</a>
+        </li>
+    </ul>
+</nav>
+</div>
+
+<!--Botones y título con grid-->
+<div style="max-width: 700px;
+margin: 0 auto;
+padding:50px;">
+    <header>
+        <h2 style="text-align: center;
+        background:rgba(0,0,0,0.2);
+        padding:20px;
+        font-family: frutiger,verdana,sans-serif; 
+        color: #ff0049;">Informes de ventas</h2>
+    </header>
+<nav>
+    <ul style="
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    ">
+        <li
+        style=" 
+        box-sizing: border-box;
+        display:flex;
+        align-items: center;
+        grid-row: span 2;
+        background:rgba(0,0,0,0.2);
+        border: 2px solid rgba(0,0,0,0.21);
+        ">
+            <a href="#"
+            style="color:white;
+            font-weight: 100;
+            letter-spacing: 2px;
+            text-decoration: none;
+            padding: 40px 0;
+            display: inline-block;
+            text-align: center;
+            flex:1;"
+            >Item 01</a>
+        </li>
+        <li
+        style=" 
+        box-sizing: border-box;
+        background:rgba(0,0,0,0.2);
+        border: 2px solid rgba(0,0,0,0.21);
+        ">
+            <a href="#"
+            style="color:white;
+            font-weight: 100;
+            letter-spacing: 2px;
+            text-decoration: none;
+            padding:20px 0;
+            width: 100%;
+            display: inline-block;
+            text-align: center;"
+            >Item 02</a>
+        </li>
+        <li
+        style=" 
+        box-sizing: border-box;
+        background:rgba(0,0,0,0.2);
+        border: 2px solid rgba(0,0,0,0.21);
+        ">
+            <a href="#"
+            style="color:white;
+            font-weight: 100;
+            letter-spacing: 2px;
+            text-decoration: none;
+            padding:20px 0;
+            width: 100%;
+            display: inline-block;
+            text-align: center;"
+            >Item 03</a>
+        </li>
+    </ul>
+</nav>
+</div>
+
+<!--Botones, descripción y título con grid-->
+<div style="max-width: 700px;
+margin: 0 auto;
+padding:50px;">
+    <header>
+        <h2 style="text-align: center;
+        background:rgba(0,0,0,0.2);
+        padding:20px;
+        font-family: frutiger,verdana,sans-serif; 
+        color: #ff0049;">Informes de ventas</h2>
+        <p style="text-align: justify;
+        font-family: frutiger,verdana,sans-serif;
+        color: rgb(48, 47, 47);"
+        >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    </header>
+<nav>
+    <ul style="
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    ">
+        <li
+        style=" 
+        box-sizing: border-box;
+        display:flex;
+        align-items: center;
+        grid-row: span 2;
+        background:rgba(0,0,0,0.2);
+        border: 2px solid rgba(0,0,0,0.21);
+        ">
+            <img src="https://sergiosaezdeibarra.com/blog/wp-content/uploads/2016/10/analitica.png"
+            style="
+            padding: 0;
+            display: inline-block;
+            flex:1;"
+            >
+        </li>
+        <li
+        style=" 
+        box-sizing: border-box;
+        display:flex;
+        align-items: center;
+        background:rgba(0,0,0,0.2);
+        border: 2px solid rgba(0,0,0,0.21);
+        ">
+            <a href="#"
+            style="color:white;
+            font-weight: 100;
+            letter-spacing: 2px;
+            text-decoration: none;
+            padding:20px 0;
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            display: inline-block;
+            flex:1;"
+            >Item 02</a>
+        </li>
+        <li
+        style=" 
+        box-sizing: border-box;
+        display:flex;
+        align-items: center;
+        background:rgba(0,0,0,0.2);
+        border: 2px solid rgba(0,0,0,0.21);
+        ">
+            <a href="#"
+            style="color:white;
+            font-weight: 100;
+            letter-spacing: 2px;
+            text-decoration: none;
+            padding:20px 0;
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            display: inline-block;
+            flex:1;"
+            >Item 03</a>
+        </li>
+    </ul>
+</nav>
+</div>
