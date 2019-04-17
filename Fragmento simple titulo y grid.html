@@ -3,17 +3,16 @@
         #editor{
             margin: 0 auto;
             padding:50px;
-            background: dark-grey;
+            background: grey;
         }
     </style>
 </head>
 <div id="app">
 <!--Editor-->
-    <div id="editor" :style="{background: styleCaja.background}">
+    <div id="editor">
         <label for="espaciado"></label>
-        <input type="range" min="0" max="200" v-model="spacing">
-        <input type="text" name="espaciado" v-model="spacing">
-
+        <input type="range" min="0" max="200" v-model="spacing" :value="spacing">
+        <input type="text" name="espaciado" v-model="spacing" :value="spacing">
     </div>
 
 <!--Visualización-->
