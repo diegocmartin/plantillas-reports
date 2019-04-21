@@ -9,7 +9,10 @@ const app = new Vue ({
         }
     },
     computed:{
-        cambiaStyleCaja: function() {return this.styleCaja.padding = this.spacing + 'px'}
+        cambiaStyleCaja: function() {
+            this.styleCaja.padding = this.spacing + 'px';
+            return this.styleCaja.padding;
+        }
         //Me falta ver dónde uso la computed para que haga efecto
     }
 })
