@@ -14,7 +14,7 @@
             color: rgb(222, 222, 222);
             font-size: 24px;
         }
-        fieldset, p{
+        fieldset, #result p{
             border: 3px solid rgb(222, 222, 222);
         }
         /*Result Styles*/
@@ -147,6 +147,7 @@
         <p></p>
         <script>
             //Me falta meterle a sí mismo, es decir, el div visual
+            //También hay que hacerlo dinámico con vue o generarlo con un click
             document.querySelector("#result p").innerText=document.querySelector("#visual").innerHTML;
         </script>
     </div>
