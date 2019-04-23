@@ -2,17 +2,20 @@ const app = new Vue ({
     el: '#app',
     data: {
         spacing: 10,
-        styleCaja:{
-            margin: '0 auto',
-            padding: '50px',
-            background: '#ededed'
-        }
+        bgcolor: '#ededed',
+        ecolor: 'rgba(0,0,0,0.2)',
     },
     computed:{
-        cambiaStyleCaja: function() {
-            this.styleCaja.padding = this.spacing + 'px';
-            return this.styleCaja.padding;
-        }
-        //Me falta ver dónde uso la computed para que haga efecto
+        styleCaja() {
+            return {
+                padding: this.spacing + 'px',
+                background: this.bgcolor,
+            };
+        },
+        styleElemento() {
+            return {
+                background: this.ecolor,
+            };
+        },
     }
 })

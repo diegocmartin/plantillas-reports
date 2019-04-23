@@ -1,22 +1,56 @@
 <head>
     <style>
-        #editor{
-            margin: 0 auto;
+        body{
+            margin:0 auto;
+            padding:0;
+        }
+        /*Editor Styles*/
+        #editor, #result{
             padding:50px;
             background: grey;
         }
+        legend{
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: rgb(222, 222, 222);
+            font-size: 24px;
+        }
+        fieldset, p{
+            border: 3px solid rgb(222, 222, 222);
+        }
+        /*Result Styles*/
+        #result p{
+            background: white;
+            padding:10px;
+        }
     </style>
 </head>
+<body>
 <div id="app">
 <!--Editor-->
     <div id="editor">
-        <label for="espaciado"></label>
-        <input type="range" min="0" max="200" v-model="spacing" :value="spacing">
-        <input type="text" name="espaciado" v-model="spacing" :value="spacing">
+        <fieldset>
+            <legend>Box Spacing</legend>  
+            <label for="espaciado"></label>
+            <input type="range" min="0" max="200" v-model="spacing" :value="spacing">
+            <input type="text" name="espaciado" v-model="spacing" :value="spacing">
+        </fieldset>
+        <fieldset>
+            <legend>Element Spacing</legend>  
+            <label for="e"></label>
+            <input type="range" min="0" max="200" >
+            <input type="text" name="e" >
+        </fieldset>
+        <fieldset>
+                <legend>Skin</legend>  
+                <label for="bgcolor">Background Color</label>
+                <input type="color" name="bgcolor" v-model="bgcolor" :value="bgcolor">
+                <label for="ecolor">Element Color</label>
+                <input type="color" name="ecolor" v-model="ecolor" :value="ecolor">
+            </fieldset>
     </div>
 
 <!--Visualización-->
-    <div :style="styleCaja">
+    <div id=visual :style="styleCaja">
         <header>
             <h2 style="text-align: center;
             background:rgba(0,0,0,0.2);
@@ -28,7 +62,7 @@
             color: rgb(48, 47, 47);"
             >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
         </header>
-    <nav>
+        <nav>
         <ul style="
         box-sizing: border-box;
         list-style: none;
@@ -106,8 +140,18 @@
                 >Item 04</a>
             </li>
         </ul>
-    </nav>
+        </nav>
+    </div>
+    <!--Result-->
+    <div id=result>
+        <p></p>
+        <script>
+            //Me falta meterle a sí mismo, es decir, el div visual
+            document.querySelector("#result p").innerText=document.querySelector("#visual").innerHTML;
+        </script>
     </div>
 </div>
+
 <script src="http://unpkg.com/vue"></script>
 <script src="main.js"></script>
+</body>
