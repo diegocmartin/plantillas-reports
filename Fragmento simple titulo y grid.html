@@ -8,9 +8,9 @@
         #editor, #result{
             padding:50px;
             background: grey;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
         legend{
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
             color: rgb(222, 222, 222);
             font-size: 24px;
         }
@@ -21,6 +21,7 @@
         #result p{
             background: white;
             padding:10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
         }
     </style>
 </head>
@@ -31,8 +32,8 @@
         <fieldset>
             <legend>Box Spacing</legend>  
             <label for="espaciado"></label>
-            <input type="range" min="0" max="200" v-model="spacing" :value="spacing">
-            <input type="text" name="espaciado" v-model="spacing" :value="spacing">
+            <input type="range" min="0" max="200" v-model="spacing">
+            <input type="text" name="espaciado" v-model="spacing">
         </fieldset>
         <fieldset>
             <legend>Element Spacing</legend>  
@@ -43,20 +44,19 @@
         <fieldset>
                 <legend>Skin</legend>  
                 <label for="bgcolor">Background Color</label>
-                <input type="color" name="bgcolor" v-model="bgcolor" :value="bgcolor">
+                <input type="color" name="bgcolor" v-model="bgcolor">
                 <label for="ecolor">Element Color</label>
-                <input type="color" name="ecolor" v-model="ecolor" :value="ecolor">
+                <input type="color" name="ecolor" v-model="ecolor">
+                <label for="accentColor">Accent Color</label>
+                <input type="color" name="accentColor" v-model="accentColor">
             </fieldset>
     </div>
 
 <!--Visualización-->
     <div id=visual :style="styleCaja">
         <header>
-            <h2 style="text-align: center;
-            background:rgba(0,0,0,0.2);
-            padding:20px;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif; 
-            color: #8fbc00;">Informes de ventas</h2>
+            <!--Esto es un h2 con background, text-align, padding y font-->
+            <input type="text" value="Informes de ventas" :style="styleH2">
             <p style="text-align: justify;
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
             color: rgb(48, 47, 47);"
